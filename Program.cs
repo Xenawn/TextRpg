@@ -5,6 +5,15 @@ using System.Runtime.CompilerServices;
 
 namespace TextRPG
 {
+
+    // [구현한 것]
+    // 1. 모든 필수 기능 
+    // 2. 도전 기능
+    //      1)아이템 정보를 클래스/ 구조체로 활용해보기  (o) - Knight 클래스 생성후 행위로 메소드로 아이템이나 상태를 필드로 관리
+    //      2)아이템 정보를 배열로 관리 (o)
+    //      3)아이템 추가(o) - 나만의 아이템 marketProduct 변수에 상품들 피자폭탄 군주의 갑옷 추가
+    //      4)휴식 기능 추가(o) Rest 함수 500 G를 써서 체력을 회복하게 끔 구현
+    //      5)장착 개선(o) // atkOverlap, defOverlap 변수로 중복 관리
     internal class Program
     {
       
