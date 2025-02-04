@@ -13,7 +13,7 @@ namespace TextRPG
         private int level = 1;
         private int atk = 10;
         private int def = 5;
-        private int hp = 100;
+        private int hp = 20;
         private int gold = 1500;
         private string[] equipment = { "무쇠갑옷", "스파르타의 창", "낡은 검" };
         private string[] information = { "방어력 +5", "공격력 +7", "공격력 +2" };
@@ -22,11 +22,11 @@ namespace TextRPG
         private int totalAtk = 0;
         private int totalDef = 0;
         private int totalHp = 0;
-        private string[] marketProduct = { "수련자 갑옷", "무쇠갑옷", "스파르타의 갑옷", "낡은 검", "청동 도끼", "스파르타의 창" }; //상점 상품
-        private string[] marketInfo = { "방어력 +5", "방어력 +9", "방어력 +15", "공격력 +2", "공격력 +5", "공격력 +7" }; // 상점 스탯 정보
+        private string[] marketProduct = { "수련자 갑옷", "무쇠갑옷", "스파르타의 갑옷", "낡은 검", "청동 도끼", "스파르타의 창", "피자 폭탄", "군주의 갑옷" }; //상점 상품
+        private string[] marketInfo = { "방어력 +5", "방어력 +9", "방어력 +15", "공격력 +2", "공격력 +5", "공격력 +7", "공격력 +5", "방어력 +20" }; // 상점 스탯 정보
         private string[] marketDescription = { "수련에 도움 주는 갑옷입니다.", "무쇠로 만들어져 튼튼한 갑옷입니다.", "스파르타의 전사들이 사용했다는 전설의 갑옷입니다.",
-                "쉽게 볼 수 있는 낡은 검 입니다." ,"어디선가 사용됐던거 같은 도끼입니다.", "스파르타의 전사들이 사용했다는 전설의 창입니다."};
-        private string[] marketGold = { "1000", "구매완료", "3500", "구매완료", "1500", "구매완료" };
+                "쉽게 볼 수 있는 낡은 검 입니다." ,"어디선가 사용됐던거 같은 도끼입니다.", "스파르타의 전사들이 사용했다는 전설의 창입니다.", "명군이 썼던 피자 폭탄입니다.", "전설의 군주가 입었던 갑옷입니다."};
+        private string[] marketGold = { "1000", "구매완료", "3500", "구매완료", "1500", "구매완료", "500", "1000" };
 
         public void PrintInformation()
         {
@@ -400,6 +400,61 @@ namespace TextRPG
             }
 
 
+        }
+
+        public void Rest()
+        {
+            
+            Console.Clear();
+            while (true)
+            {
+                Console.WriteLine("휴식하기");
+                Console.WriteLine($"500 G 를 내면 체력을 회복할 수 있습니다. (보유 골드: {gold} G)");
+                Console.WriteLine($"현재 당신의 체력은 {hp}입니다.");
+                Console.WriteLine();
+                Console.WriteLine("1. 휴식하기");
+                Console.WriteLine("0. 나가기");
+                Console.WriteLine();
+                Console.WriteLine("원하시는 행동을 입력해주세요.");
+                Console.Write(">> ");
+                string input = Console.ReadLine();
+                
+                if(input == "1")
+                {
+                    if (gold >= 500)
+                    {
+                        Console.Clear();
+                        Console.WriteLine("===================================================================");
+                        gold -= 500;
+                        Console.WriteLine("휴식을 완료했습니다.");
+                        hp = 100;
+                        Console.WriteLine($"현재 보유 골드는 {gold}입니다.");
+                        Console.WriteLine($"현재 당신의 체력은 {hp}입니다.");
+                        Console.WriteLine("===================================================================");
+                    }
+                    else
+                    {
+                        Console.Clear();
+                        Console.WriteLine("===================================================================");
+                        Console.WriteLine("Gold가 부족합니다.");
+                        Console.WriteLine("===================================================================");
+                    }
+                }
+                else if(input == "0")
+                {
+                    Console.Clear();
+                    break;
+                }
+                else
+                {
+                    Console.Clear();
+                    Console.WriteLine("===================================================================");
+                    Console.WriteLine("잘못된 입력입니다.");
+                    Console.WriteLine("===================================================================");
+                    Console.WriteLine();
+                }
+
+            }
         }
     }
 }

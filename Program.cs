@@ -24,6 +24,7 @@ namespace TextRPG
                 Console.WriteLine("1. 상태보기");
                 Console.WriteLine("2. 인벤토리");
                 Console.WriteLine("3. 상점");
+                Console.WriteLine("4. 휴식하기");
                 Console.WriteLine();
                 Console.WriteLine("원하시는 행동을 입력해주세요. ");
                 Console.Write(">> ");
@@ -42,6 +43,10 @@ namespace TextRPG
                 {
 
                     knight.Market();
+                }
+                else if(input == "4")
+                {
+                    knight.Rest();
                 }
                 else
                 {
