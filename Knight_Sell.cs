@@ -46,7 +46,7 @@ namespace TextRPG
                     Console.Clear();
                     break;
                 }
-                if (int.Parse(input) != 0 && equipment.Length == 0)
+                if (int.Parse(input) != 0 && equipment.Length == 0) // 배열 참조를 쉽게 하기 위해 int로 변환
                 {
                     Console.Clear();
                     Console.WriteLine(" ++++++++++++++++++++++++++++++++++++++++ ");

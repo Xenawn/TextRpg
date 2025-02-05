@@ -33,10 +33,10 @@ namespace TextRPG
         protected string[] marketDescription = { "수련에 도움 주는 갑옷입니다.", "무쇠로 만들어져 튼튼한 갑옷입니다.", "스파르타의 전사들이 사용했다는 전설의 갑옷입니다.",
                 "쉽게 볼 수 있는 낡은 검 입니다." ,"어디선가 사용됐던거 같은 도끼입니다.", "스파르타의 전사들이 사용했다는 전설의 창입니다.", "명군이 썼던 피자 폭탄입니다.", "전설의 군주가 입었던 갑옷입니다."};
         protected string[] marketGold = { "1000", "구매완료", "3500", "구매완료", "1500", "구매완료", "500", "1000" };
-        private int clearTime = 0;
-        private double atkEquip = atk + totalAtk;
-        private int defEquip = def + totalDef;
-        private int levelTime = level;
+        private int clearTime = 0; // 던전 횟수 
+        private double atkEquip = atk + totalAtk; // 장비와 내 공격력 합산
+        private int defEquip = def + totalDef; // 장비와 내 방어력 합산
+        private int levelTime = level; // 레벨 횟수만큼 던전 횟수를 돌아야 레벨업
     }
 
     }
