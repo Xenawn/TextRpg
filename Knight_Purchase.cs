@@ -45,6 +45,7 @@ namespace TextRPG
 
                 int num = int.Parse(input);
 
+
                 if (num == 0)
                 {
                     Console.Clear();
@@ -91,7 +92,7 @@ namespace TextRPG
 
                         }
 
-                        else
+                        else // 골드 부족
                         {
                             Console.Clear();
                             Console.WriteLine("===================================================================");
