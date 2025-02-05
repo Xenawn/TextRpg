@@ -44,8 +44,16 @@ namespace TextRPG
                 string input = Console.ReadLine();
 
                 int num = int.Parse(input);
+                if (string.IsNullOrEmpty(input)) // 입력이 공백 또는 빈 문자열인지 확인
+                {
+                    Console.Clear();
+                    Console.WriteLine("===================================================================");
+                    Console.WriteLine("입력값이 비어 있습니다. 다시 입력해주세요.");
+                    Console.WriteLine("===================================================================");
+                    continue;
+                }
 
-                if (num == 0)
+                else if (num == 0)
                 {
                     Console.Clear();
                     break;
