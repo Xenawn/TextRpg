@@ -5,7 +5,8 @@ using System.Net.Security;
 using System.Reflection.Metadata;
 using System.Text;
 using System.Threading.Tasks;
-
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 namespace TextRPG
 {
     public partial class Knight
@@ -33,9 +34,10 @@ namespace TextRPG
                 "쉽게 볼 수 있는 낡은 검 입니다." ,"어디선가 사용됐던거 같은 도끼입니다.", "스파르타의 전사들이 사용했다는 전설의 창입니다.", "명군이 썼던 피자 폭탄입니다.", "전설의 군주가 입었던 갑옷입니다."};
         protected string[] marketGold = { "1000", "구매완료", "3500", "구매완료", "1500", "구매완료", "500", "1000" };
         private int clearTime = 0;
-        private  double atkEquip = atk + totalAtk;
+        private double atkEquip = atk + totalAtk;
         private int defEquip = def + totalDef;
         private int levelTime = level;
+    }
 
     }
-}
+
