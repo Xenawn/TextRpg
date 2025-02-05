@@ -9,6 +9,8 @@ namespace TextRPG
     
     public partial class Knight
     {
+ 
+        // 레벨업처리
         public void LevelUp()
         {
             if (levelTime == clearTime)

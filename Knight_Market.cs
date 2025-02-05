@@ -10,6 +10,7 @@ namespace TextRPG
     {
         public void Market()
         {
+            //상점
             Console.Clear();
             while (true)
             {

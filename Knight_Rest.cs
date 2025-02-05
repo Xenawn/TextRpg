@@ -10,7 +10,7 @@ namespace TextRPG
     {
         public void Rest()
         {
-
+            // 휴식
             Console.Clear();
             while (true)
             {

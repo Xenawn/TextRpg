@@ -11,6 +11,7 @@ namespace TextRPG
     {
         public void Purchase()  //구매
         {
+            //상점 - 구매
             while (true)
             {
 

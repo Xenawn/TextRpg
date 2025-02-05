@@ -14,6 +14,10 @@ namespace TextRPG
     //      3)아이템 추가(o) - 나만의 아이템 marketProduct 변수에 상품들 피자폭탄 군주의 갑옷 추가
     //      4)휴식 기능 추가(o) Rest 함수 500 G를 써서 체력을 회복하게 끔 구현
     //      5)장착 개선(o) // atkOverlap, defOverlap 변수로 중복 관리
+
+
+    // hp가 - 구간으로 가면 0으로 보정했습니다
+    
     internal class Program
     {
       

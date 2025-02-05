@@ -11,6 +11,7 @@ namespace TextRPG
     {
         public void Sell()
         {
+            // 상점 팔기
             Console.Clear();
             while (true)
             {

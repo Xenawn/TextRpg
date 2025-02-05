@@ -11,6 +11,7 @@ namespace TextRPG
     {
         public void Dungeon()
         {
+            //던전
             Console.Clear();
             Random random = new Random(); // 체력 감소 난수 생성
             int minusHp = random.Next(20, 36);  // 체력 감소 20 ~35
