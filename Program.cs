@@ -34,6 +34,7 @@ namespace TextRPG
                 Console.WriteLine("2. 인벤토리");
                 Console.WriteLine("3. 상점");
                 Console.WriteLine("4. 휴식하기");
+                Console.WriteLine("5. 던전입장");
                 Console.WriteLine();
                 Console.WriteLine("원하시는 행동을 입력해주세요. ");
                 Console.Write(">> ");
@@ -56,6 +57,10 @@ namespace TextRPG
                 else if(input == "4")
                 {
                     knight.Rest();
+                }
+                else if(input =="5")
+                {
+                    knight.Dungeon();
                 }
                 else
                 {

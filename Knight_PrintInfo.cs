@@ -55,7 +55,7 @@ namespace TextRPG
                     }
                     else
                     {
-                        Console.WriteLine($"공격력 : {atk + totalAtk} +({totalAtk})");
+                        Console.WriteLine($"공격력 : {atkEquip} +({totalAtk})");
                     }
                     if (totalDef == 0) // 스탯 추가 x
                     {
@@ -63,7 +63,7 @@ namespace TextRPG
                     }
                     else
                     {
-                        Console.WriteLine($"방어력 : {def + totalDef} +({totalDef})");
+                        Console.WriteLine($"방어력 : {defEquip} +({totalDef})");
                     }
                     Console.WriteLine($"체력 : {hp}");
                     Console.WriteLine($"Gold : {gold} G");
