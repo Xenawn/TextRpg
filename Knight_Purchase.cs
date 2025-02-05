@@ -61,7 +61,7 @@ namespace TextRPG
                     }
                     else
                     {
-                        if (gold >= int.Parse(marketGold[num - 1]))
+                        if (gold >= int.Parse(marketGold[num - 1])) // 골드가 구매할 수 있는 가격인지 체크
                         {
                             Console.Clear();
                             gold -= int.Parse(marketGold[num - 1]);
@@ -91,7 +91,7 @@ namespace TextRPG
 
                         }
 
-                        else
+                        else // 골드 부족
                         {
                             Console.Clear();
                             Console.WriteLine("===================================================================");
